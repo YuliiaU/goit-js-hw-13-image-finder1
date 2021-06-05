@@ -1,0 +1,83 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(172, 224, 253);
+  background: linear-gradient(
+    to left,
+    rgb(210, 233, 236) 32%,
+    rgb(70, 230, 235) 59%,
+    rgba(231, 240, 244, 1) 100%
+  );
+}
+.search-form {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.search-form input {
+  width: 250px;
+  height: 35px;
+  font-size: 20px;
+  color: grey;
+  border-color: grey;
+  border-radius: 10px 0;
+  transition: transform 0.21s ease-in-out;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    border: solid 2px gray;
+    outline: none;
+    box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+  }
+}
+button {
+  width: 130px;
+  height: 40px;
+  padding: 10px;
+  background-color: lightskyblue;
+  border-color: rgb(132, 180, 219);
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+  transition: transform 0.11s ease-in-out;
+  &:hover {
+    transform: scale(1.09);
+    background-color: rgb(112, 203, 233);
+    box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+  }
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.cards {
+  margin-bottom: 25px;
+  margin-right: 25px;
+  border: 2px solid rgb(80, 154, 224);
+  border-radius: 5px;
+}
+.cards img {
+  width: 290px;
+  height: 250px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+  transition: transform 0.21s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 5px 25px rgba(11, 13, 37, 0.12);
+  }
+}
+.pnotify-position {
+  position: fixed;
+  right: 10px;
+}
